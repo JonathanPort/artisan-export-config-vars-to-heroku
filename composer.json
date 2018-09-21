@@ -1,0 +1,46 @@
+{
+    "name": "jonathanport/artisan-export-config-vars-to-heroku",
+    "description": "A simple Artisan command for Laravel to auto export .env config vars into a Heroku app. Removes the issue of having to manually add all config vars. Especially useful if you have lots!",
+    "keywords": [
+        "Artisan",
+        "Console",
+        "Commands",
+        "Laravel",
+        "Heroku",
+        "Config Vars",
+        ".env"
+    ],
+    "type": "library",
+    "require": {
+        "php": ">=7.1",
+        "laravel/framework": "~5.0",
+        "symfony/process": "^4.1"
+    },
+    "authors": [
+        {
+            "name": "jonathanport",
+            "email": "hello@jonathanport.com",
+            "homepage": "https://jonathanport.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "JonathanPort\\ArtisanCommands\\": "src"
+        }
+    },
+    "license": "MIT",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JonathanPort\\ArtisanCommands\\ArtisanCommandServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.7",
+        "phpunit/phpunit": "^7.3"
+    }
+}
