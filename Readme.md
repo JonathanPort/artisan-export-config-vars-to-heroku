@@ -9,7 +9,7 @@ A Laravel artisan command to allow a quick export of config vars to Heroku with 
 
 ### Installation
 ```bash
-composer install jonathanport/artisan-export-config-vars-to-heroku
+composer require jonathanport/artisan-export-config-vars-to-heroku
 ```
 
 ### Usage
