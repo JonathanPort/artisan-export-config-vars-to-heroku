@@ -47,6 +47,9 @@ class ExportConfigVarsToHeroku extends Command
         // Loop over the files lines
         foreach ($file as $line) {
 
+            // If line contains hashtag, ignore
+            if (stripos($line, '#') !== false) continue;
+
             // Trim the line for new lines and white spaces
             $line = trim($line);
 
